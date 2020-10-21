@@ -1,0 +1,12 @@
+<form id="nonseamless" method="post" name="redirect" action="{{cc_url}}/transaction/transaction.do?command=initiateTransaction" style="padding:50px; text-align:center; border:1px solid; border-radius:10px; background:#f5f5f5;">
+    <input type="hidden" id="encRequest" name="encRequest" value={{encryption}}>
+    <input type="hidden" name="access_code" id="access_code" value={{access_code}}>
+    <p>Pay {{p_amount}}/-</p>
+    <input type="submit" value="Make Payment">
+</form>
+
+<script>
+    // uncomment to auto submit the form
+    // document.getElementById("nonseamless").style.display = 'none';
+    // document.getElementById("nonseamless").submit();
+</script>
